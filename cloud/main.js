@@ -22,14 +22,19 @@ callback(err, response) */
 exports.getByFacebookUsername = function(params, callback) { 
   
   var username = params.username;
-// Check username is provided if(!username || username === "") {
-return callback("username cannot be empty/undefined", null); }
+
+  // Check username is provided if(!username || username === "") {
+    return callback("username cannot be empty/undefined", null); }
 // Call the Facebook Graph API
-var request = require('request'); request('http://graph.facebook.com/' + username, function(err, res,
+var request = require('request'); 
+
+request('http://graph.facebook.com/' + username, function(err, res,
 body) { if(err) {
 return callback({
 msg: "Facebook request error",
 err: err });
 }
+
 return callback(null, body); 
+
 });
