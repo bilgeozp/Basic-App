@@ -4,6 +4,6 @@
   "dependencies" : 
     {
     "fh­-nodeapp" : "*",
-    "request": "*" 
+    "request": "*"
     }
 }
