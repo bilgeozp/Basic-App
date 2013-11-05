@@ -27,7 +27,8 @@ exports.getByFacebookUsername = function(params, callback) {
 //    return callback("username cannot be empty/undefined", null); 
 //  }
 // Call the Facebook Graph API
-var request = require('request'); 
+/*
+  var request = require('request'); 
 request('http://graph.facebook.com/' + username, 
           function(err, res, body) 
           { 
@@ -41,4 +42,5 @@ request('http://graph.facebook.com/' + username,
             return callback(null, body); 
           }
          );
+*/
 };
