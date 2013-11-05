@@ -14,6 +14,12 @@ exports.getConfig = function(params, callback) {
   return callback(null, {config: cfg.config});
 };
 
+exports.getMe = function(params, callback) {
+  console.log("In getConfig() call");
+  var cfg = require("config.js");
+  return callback(null, {config: cfg.config});
+};
+
 /**
 * Get the details of a Facebook user by username *@param{Object}params Thisisoptionspassedfromourclientact
 call.
