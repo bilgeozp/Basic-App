@@ -34,7 +34,7 @@ exports.getByFacebookUsername = function(params, callback) {
       return callback({
         msg: "Facebook request error",
         err: err
-      });
+      }); 
     }
     
     return callback(null, body);
